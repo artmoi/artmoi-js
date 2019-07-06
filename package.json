@@ -5,6 +5,7 @@
   "types": "./lib/index.d.ts",
   "repository": "https://github.com/artmoi/artmoi-js",
   "author": "ArtMoi <moi@artmoi.com>",
+  "license": "Apache-2.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release",
