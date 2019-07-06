@@ -14,21 +14,22 @@ export class ApiConnections {
 
     private configuredConnections: ConfiguredConnections;
 
-    public constructor(
-        connectionConfigurations: ConnectionConfigurations[]
-    ) {
+    // TODO ::  REFACTOR TO SOMETHING THAT MAKES SENSE
+    // public constructor(
+    //     connectionConfigurations: ConnectionConfigurations[]
+    // ) {
 
-        this.configuredConnections = _.chain(connectionConfigurations)
-            .reduce((previous, current) => {
+    //     this.configuredConnections = _.chain(connectionConfigurations)
+    //         .reduce((previous, current) => {
 
-                return _.merge(previous, current);
-            })
-            .mapValues((apiConfiguration) =>  new ApiConnection(apiConfiguration))
-            .value();
-    }
+    //             return _.merge(previous, current);
+    //         })
+    //         .mapValues((apiConfiguration) =>  new ApiConnection(apiConfiguration))
+    //         .value();
+    // }
 
-    public connection<Name extends keyof ConfiguredConnections>(name: Name): ConfiguredConnections[Name] {
+    // public connection<Name extends keyof ConfiguredConnections>(name: Name): ConfiguredConnections[Name] {
 
-        return this.configuredConnections[name];
-    }
+    //     return this.configuredConnections[name];
+    // }
 }

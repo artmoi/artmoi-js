@@ -1,11 +1,12 @@
 import _ from "lodash";
-import { ServiceProvider } from "udder-bundle";
+// import { ServiceProvider } from "udder-bundle";
 import { artmoiOauthConfiguration, artmoiApiConfiguration } from "./ArtMoiApiConfiguration";
 import { ArtMoiApiVariables } from "./ArtMoiApiVariables";
 import { artmoiSymbols } from "./ArtMoiSymbols";
 
 
-export class ArtMoiServiceProvider extends ServiceProvider {
+export class ArtMoiServiceProvider {
+    // export class ArtMoiServiceProvider extends ServiceProvider {
 
     public async boot() {
 
