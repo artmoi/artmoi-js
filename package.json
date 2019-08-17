@@ -3,13 +3,16 @@
   "version": "0.0.3",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "repository": "https://github.com/artmoi/artmoi-js",
+  "repository": "git@github.com:artmoi/artmoi-js.git",
   "author": "ArtMoi <moi@artmoi.com>",
   "license": "Apache-2.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release",
     "build": "tsc"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "@types/lodash": "^4.14.135",
