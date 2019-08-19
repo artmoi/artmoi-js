@@ -1,6 +1,6 @@
 {
   "name": "@artmoi/artmoi-js",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "repository": "git@github.com:artmoi/artmoi-js.git",
@@ -27,9 +27,5 @@
   "devDependencies": {
     "ts-node": "^3.0.2",
     "typescript": "^3.3.3333"
-  },
-  "resolutions": {
-    "axios": "0.19.0",
-    "lodash": "4.17.11"
   }
 }
