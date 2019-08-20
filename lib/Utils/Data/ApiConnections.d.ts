@@ -6,4 +6,6 @@ export declare type ConnectionConfigurations = {
 };
 export declare class ApiConnections {
     private configuredConnections;
+    constructor(connectionConfigurations: ConnectionConfigurations[]);
+    connection<Name extends keyof ConfiguredConnections>(name: Name): ConfiguredConnections[Name];
 }
